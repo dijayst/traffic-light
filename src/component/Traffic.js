@@ -4,13 +4,13 @@ import React, { Component } from 'react';
 
 const colors ={
     red:{
-        background:"#cc3232"
+        background:"red"
     },
     yellow:{
-        background:"#e7b416"
+        background:"yellow"
     },
     green:{
-        background:"#2dc937"
+        background:"green"
     },
     grey:{
         background:"grey"
@@ -56,6 +56,7 @@ handleswitch=()=>{
           });
           
       }
+    //  console.log(`effect1111 ${this.state.next}`)
    }
 
 
@@ -80,3 +81,5 @@ componentDidMount(){
  }
 
 export default Traffic
+
+
