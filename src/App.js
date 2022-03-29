@@ -1,14 +1,15 @@
 import React from 'react'
 import './App.css';
-import Jsonap from './component/Jsonap';
-import PostList from './component/Postlist';
+//import Jsonap from './component/Jsonap';
+//import PostList from './component/Postlist';
 import Traffic from './component/Traffic';
-import Hookslight from './Hookslight';
+
 
 function App() {
   return (
     <div className="App">
-      <Traffic/><Jsonap/><PostList/><Hookslight/>
+      <Traffic/>
+      
     </div>
   );
 }

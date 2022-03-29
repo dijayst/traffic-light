@@ -23,6 +23,17 @@ const [green, setGreen] = useState(colors.grey);
 const [next, setNext] = useState(colors.yellow);
 
 
+
+
+/*
+ useEffect(()=>{const interval= setInterval(handleswitch,5000)
+  return()=>{
+clearInterval(interval)
+ }},[])
+*/
+
+useEffect(()=>{
+  
 const handleswitch=()=>{
   switch (next) {
       case "red":
@@ -46,12 +57,15 @@ const handleswitch=()=>{
           red: colors.red,
           yellow: colors.grey,
           green: colors.grey,
-          next: 'yellow'
+          next: 'blue'
         });
         
     }
-    console.log(`effective ${next}`)
+    console.log(`effective ${setNext}`)
  }
+
+setInterval(handleswitch,5000);
+},[colors.green, colors.grey, colors.red, colors.yellow,next])
 
     return (
         <div>
@@ -60,7 +74,7 @@ const handleswitch=()=>{
              <button style={yellow}></button> 
                 
              <button style={green}></button>
-           <p>{next}</p>
+           
         </div>
     )
 }

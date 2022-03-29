@@ -42,3 +42,8 @@ button{
   border-radius: 50%;
   margin-top: 15px;
 }
+.bord{
+  background-color: black;
+  border:14px solid rgb(14, 12, 12);
+  margin: 0% 45% 0% 45%;
+}

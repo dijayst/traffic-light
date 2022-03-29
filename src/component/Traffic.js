@@ -69,7 +69,7 @@ componentDidMount(){
     render() {
         
         return (
-            <div>
+            <div className="bord">
                 <button style={this.state.red}></button> <br/>
                 
                 <button style={this.state.yellow}></button> <br/>
